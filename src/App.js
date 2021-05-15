@@ -6,8 +6,8 @@ import NotFound from './NotFound';
 import Home from './Home';
 import Blogs from './Blogs';
 import Blockchain from './Blockchain';
-import ModalCard from "./ModalCard";
-
+import Altcoin from './Altcoin';
+import Token from './Token.js';
 function App() {
   return (
     <Router>
@@ -18,7 +18,8 @@ function App() {
           <Route exact path ="/" component = { Home } />
           <Route path ="/blogs" component = {Blogs} />
           <Route path="/blockchain" component = {Blockchain} />
-          <Route path="/modal" component = {ModalCard} />
+          <Route path="/altcoin" component = {Altcoin} />
+          <Route path="/token" component = {Token} />
           <Route path="*" component = {NotFound} />
         </Switch>
       </div>

@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 const Navbar1 = () => {
   return (
     <div>
-<header className ="head"></header>
+{/* <header className ="head"></header> */}
 <Navbar bg="dark" expand="lg" fixed ="top" className ="navbar">
 <Link to="/"><Navbar.Brand >Writing Room</Navbar.Brand></Link>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />

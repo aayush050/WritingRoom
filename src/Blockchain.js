@@ -1,19 +1,13 @@
 import React from "react";
 import "./Front.css";
-import { Container, Row, Popover, Button, OverlayTrigger } from "react-bootstrap";
+import { Container, Row, Popover, OverlayTrigger } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import ModalCard from "./ModalCard";
 import "./Front.css";
 
 const Blockchain = () => {
-  const showModal = () => {
-    <ModalCard
-      title="Distributed Ledger Technology (DLT)"
-      description="Distributed ledger technology (DLT) is a digital system for recording the transaction of assets in which the transactions and their details are recorded in multiple places at the same time. Unlike traditional databases, distributed ledgers have no central data store or administration functionality."
-    />;
-  };
-  const popover = (
-    <Popover id="popover-basic">
+  
+  const popoverForBlockchain = (
+    <Popover>
       <Popover.Content>
       Distributed ledger technology (DLT) is a digital system for recording the transaction of assets 
       in which the transactions and their details are recorded in multiple places at the same time. 
@@ -24,6 +18,8 @@ const Blockchain = () => {
   );
 
   return (
+      <div>
+          <header className="BlockchainHead"></header>
     <Container>
       <Container class="hidden-spacer"> </Container>
       <Container>
@@ -46,9 +42,9 @@ const Blockchain = () => {
               <OverlayTrigger
                 trigger="hover"
                 placement="top"
-                overlay={popover}
+                overlay={popoverForBlockchain}
               >             
-              <p variant="success" className="linksInsidePage">
+              <p variant="success" className="modalsInsidePage">
                 Distributed Ledger Technology (DLT).
               </p>
               </OverlayTrigger>
@@ -132,6 +128,7 @@ const Blockchain = () => {
         </Row>
       </Container>
     </Container>
+    </div>
   );
 };
 

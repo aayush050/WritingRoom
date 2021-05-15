@@ -11,3 +11,64 @@
   color: red;
   font-weight:bold !important;
 }
+.modalsInsidePage{
+  text-decoration: none !important;
+  color: rgb(9, 219, 9);
+  font-weight:bold !important;
+}
+.head {
+  height:70vh;
+  width: 100%;
+  object-fit: cover;
+  margin: 0px 0px 0px 0px;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image:url('./cryptocurrency1.jpeg');   
+}
+.BlockchainHead{
+  height:70vh;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image:url('./blockchain.jpeg');
+}
+.AltcoinHead{
+  height:70vh;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image:url('./altcoin.jpeg');
+}
+.TokenHead{
+  height:70vh;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image:url('./Token.jpeg');
+}
+.BlogHead{
+  height:70vh;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image:url('./blogs.jpeg');
+}
