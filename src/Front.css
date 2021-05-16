@@ -2,6 +2,7 @@
 .container{
     font-family: 'Quicksand', sans-serif !important;
     font-size: 1rem !important;
+    color: #333;
   }
 .hidden-spacer {
     margin-top: 3rem;
@@ -20,7 +21,6 @@
   height:70vh;
   width: 100%;
   object-fit: cover;
-  margin: 0px 0px 0px 0px;
   overflow: hidden;
   background-position: center;
   background-repeat: no-repeat;

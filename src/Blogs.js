@@ -1,6 +1,6 @@
 import React from "react";
 import "./Blogs.css";
-import { Card, CardColumns } from "react-bootstrap";
+import { CardColumns } from "react-bootstrap";
 import BlogCards from "./BlogCards";
 const Blogs = () => {
   return (
@@ -18,7 +18,7 @@ const Blogs = () => {
       <CardColumns className="mb-5 ml-4">
         <BlogCards title="Tokens" description="Altcoins are alternative cryptocurrencies..." link="/token"/>
         <br />
-        <BlogCards title="Cryptocurrency" description="Virtual coins" />
+        <BlogCards title="Coin Market" description="List of coins in the market and their prices.." link="/coins"/>
         <br />
         <BlogCards title="Cryptocurrency" description="Virtual coins" />
         <br />

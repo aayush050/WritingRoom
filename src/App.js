@@ -8,6 +8,7 @@ import Blogs from './Blogs';
 import Blockchain from './Blockchain';
 import Altcoin from './Altcoin';
 import Token from './Token.js';
+import Coinlist from './Coinlist';
 function App() {
   return (
     <Router>
@@ -20,7 +21,8 @@ function App() {
           <Route path="/blockchain" component = {Blockchain} />
           <Route path="/altcoin" component = {Altcoin} />
           <Route path="/token" component = {Token} />
-          <Route path="*" component = {NotFound} />
+          <Route path="/coins" component = {Coinlist} />
+          <Route path="*" component = {NotFound} />    
         </Switch>
       </div>
         <Contact />

@@ -2,23 +2,27 @@ import React from "react";
 import "./Front.css";
 import {
   Container,
-  Row,
-  Popover,
-  Button,
-  OverlayTrigger,
+  Row
 } from "react-bootstrap";
-import { Link } from "react-router-dom";
 
 const Token = () => {
   return (
     <div>
       <header className="TokenHead"></header>
+      <div fluid
+        id="coinmarketcap-widget-marquee"
+        coins="1,1027,825,1839,2010,74,52,6636,1831,7083,1975,512,4687,5994,8916,2,3408,3822,5864,3890,3077,1321,1772,7186,5034,2502,5426,1274,5161"
+        currency="USD"
+        theme="light"
+        transparent="false"
+        show-symbol-logo="true"
+      ></div>
       <Container>
         <Container class="hidden-spacer"> </Container>
         <Container>
           <Row>
             <Container class="col-12 mt-5">
-              <h3 class="mt-5">What are Crypto tokens??</h3>
+              <h3 class="mt-5">What are Crypto tokens?</h3>
               <p>
                 The term crypto token refers to a special virtual currency token
                 or how cryptocurrencies are denominated. These tokens represent

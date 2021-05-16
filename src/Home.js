@@ -1,18 +1,22 @@
 import React from "react";
 import "./Front.css";
-import {
-  Container,
-  Row,
-  Popover,
-  Button,
-  OverlayTrigger,
-} from "react-bootstrap";
-
+import { Container, Row } from "react-bootstrap";
+//import { useEffect } from "react";
 import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
     <div>
       <header className="head"></header>
+      <div
+        id="coinmarketcap-widget-marquee"
+        coins="1,1027,825,1839,2010,74,52,6636,1831,7083,1975,512,4687,5994,8916,2,3408,3822,5864,3890,3077,1321,1772,7186,5034,2502,5426,1274,5161"
+        currency="USD"
+        theme="light"
+        transparent="false"
+        show-symbol-logo="true"
+      ></div>
+      {/* <div class="coinmarketcap-currency-widget" data-currencyid="1027" data-base="INR" data-secondary="USD" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-statsticker="true" data-stats="INR"></div> */}
       <Container>
         <Container class="hidden-spacer"> </Container>
         <Container>
@@ -75,79 +79,79 @@ const Home = () => {
                 Mining in the crypto world is the process of keeping blockchain
                 data in check. It involves hard work (done by computers) and
                 results in a slow accumulation of resources – just like mining
-                for minerals.</p>
-                <p>
-                  Cryptocurrency mining is painstaking, costly, and only
-                  sporadically rewarding. Nonetheless, mining has a magnetic
-                  appeal for many investors interested in cryptocurrency because
-                  of the fact that miners are rewarded for their work with
-                  crypto tokens.
-                </p>
-                <p>
-                  Anyone can become a miner, but mining is not for everyone.
-                  Over 70% of Bitcoin mining happens in China, where dirt cheap
-                  electricity makes running mining computers extremely
-                  profitable.
-                </p>
-                <p>
-                  In cryptocurrency networks, mining is a validation of
-                  transactions. For this effort, successful miners obtain new
-                  cryptocurrency as a reward. The reward decreases transaction
-                  fees by creating a complementary incentive to contribute to
-                  the processing power of the network. The rate of generating
-                  hashes, which validate any transaction, has been increased by
-                  the use of specialized machines such as FPGAs and ASICs
-                  running complex hashing algorithms like SHA-256 and scrypt.
-                </p>
-                <h3>Categorization Of Cryptocurrencies</h3>
-                <p>
-                  It is important to note that all coins or tokens are regarded
-                  as cryptocurrencies, even if most of the coins do not function
-                  as a currency or medium of exchange.
-                </p>
-                <p>
-                  All these characteristics are inherent within Bitcoin, and
-                  since the cryptocurrency space was kickstarted by Bitcoin’s
-                  creation, any other coins conceived after Bitcoin is generally
-                  considered as a cryptocurrency, though most do not fulfill the
-                  aforementioned characteristics of an actual currency.
-                </p>
-                <p>The most common categorization of cryptocurrencies are:</p>
-                <p>
-                  1.{" "}
-                  <Link className="linksInsidePage" to="/altcoin">
-                    Altcoins
-                  </Link>{" "}
-                  (Alternative Cryptocurrency Coins)
-                </p>
-                <p>
-                  2.{" "}
-                  <Link className="linksInsidePage" to="/token">
-                    Crypto Tokens
-                  </Link>
-                </p>
-                <h3>Coins VS Tokens</h3>
-                <p>
-                  Coins are native to their own blockchain. Whilst tokens have
-                  been built on top of another blockchain, like Ethereum, NEO,
-                  or Waves.
-                </p>
-                <p>
-                  Coins are most often used simply as money; however, some coins
-                  do have other uses. These include being used to fuel
-                  applications, being used as a stake to validate a transaction
-                  on a network, or being used to fuel smart contract and token
-                  transactions.
-                </p>
-                <p>
-                  Meanwhile, tokens serve a different purpose. If they were
-                  created to be used on a dApp(Decentralized Applications), then
-                  their purpose will depend on the application itself. In some
-                  cases, they are for features such as voting rights. In other
-                  cases, they are used for transactions on the dApp (like Civic)
-                  or to reward the users with things like discounted fees, etc.
-                  (like Binance).
-                </p>
+                for minerals.
+              </p>
+              <p>
+                Cryptocurrency mining is painstaking, costly, and only
+                sporadically rewarding. Nonetheless, mining has a magnetic
+                appeal for many investors interested in cryptocurrency because
+                of the fact that miners are rewarded for their work with crypto
+                tokens.
+              </p>
+              <p>
+                Anyone can become a miner, but mining is not for everyone. Over
+                70% of Bitcoin mining happens in China, where dirt cheap
+                electricity makes running mining computers extremely profitable.
+              </p>
+              <p>
+                In cryptocurrency networks, mining is a validation of
+                transactions. For this effort, successful miners obtain new
+                cryptocurrency as a reward. The reward decreases transaction
+                fees by creating a complementary incentive to contribute to the
+                processing power of the network. The rate of generating hashes,
+                which validate any transaction, has been increased by the use of
+                specialized machines such as FPGAs and ASICs running complex
+                hashing algorithms like SHA-256 and scrypt.
+              </p>
+              <h3>Categorization Of Cryptocurrencies</h3>
+              <p>
+                It is important to note that all coins or tokens are regarded as
+                cryptocurrencies, even if most of the coins do not function as a
+                currency or medium of exchange.
+              </p>
+              <p>
+                All these characteristics are inherent within Bitcoin, and since
+                the cryptocurrency space was kickstarted by Bitcoin’s creation,
+                any other coins conceived after Bitcoin is generally considered
+                as a cryptocurrency, though most do not fulfill the
+                aforementioned characteristics of an actual currency.
+              </p>
+              <p>The most common categorization of cryptocurrencies are:</p>
+              <p>
+                1.{" "}
+                <Link className="linksInsidePage" to="/altcoin">
+                  Altcoins
+                </Link>{" "}
+                (Alternative Cryptocurrency Coins)
+              </p>
+              <p>
+                2.{" "}
+                <Link className="linksInsidePage" to="/token">
+                  Crypto Tokens
+                </Link>
+              </p>
+              <h3>Coins VS Tokens</h3>
+              <p>
+                Coins are native to their own blockchain. Whilst tokens have
+                been built on top of another blockchain, like Ethereum, NEO, or
+                Waves.
+              </p>
+              <p>
+                Coins are most often used simply as money; however, some coins
+                do have other uses. These include being used to fuel
+                applications, being used as a stake to validate a transaction on
+                a network, or being used to fuel smart contract and token
+                transactions.
+              </p>
+              <p>
+                Meanwhile, tokens serve a different purpose. If they were
+                created to be used on a dApp(Decentralized Applications), then
+                their purpose will depend on the application itself. In some
+                cases, they are for features such as voting rights. In other
+                cases, they are used for transactions on the dApp (like Civic)
+                or to reward the users with things like discounted fees, etc.
+                (like Binance).
+              </p>
             </Container>
           </Row>
         </Container>
