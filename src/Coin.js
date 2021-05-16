@@ -14,20 +14,22 @@ const Coin = ({
   return (
     <Container>
       <Row>
-          <Col sm={3} className="separator">
+        <Col className="separator">
           <img src={image} alt="crypto" />
-          <h5 className="ml-2 mr-1">{name}<br/>
-          <p className="coin-symbol">({symbol})</p></h5>
-          </Col>
+          <h5 className="ml-2 mr-1">
+            {name}
+            <br />
+            <p className="coin-symbol">({symbol})</p>
+          </h5>
+        </Col>
 
         <Col>
-          <p className="coin-price">{/*&#x20B9;*/} ${price.toLocaleString()}</p>
-          </Col>
+          <p className="coin-price">
+            {/*&#x20B9;*/} ${price.toLocaleString()}
+          </p>
+        </Col>
 
-          <Col>
-            <p className="coin-volume">{/*&#x20B9;*/} ${volume.slice(0, 2)}B</p>
-          </Col>
-
+       
           <Col>
             {priceChange < 0 ? (
               <p className="coin-percent red">{priceChange.toFixed(2)}%</p>
@@ -35,10 +37,11 @@ const Coin = ({
               <p className="coin-percent green">{priceChange.toFixed(2)}%</p>
             )}
           </Col>
-
           <Col>
-            <p className="coin-marketcap">{/*&#x20B9;*/} ${marketcap.slice(0, 2)}B</p>
-          </Col>
+          <p className="coin-volume">
+            {/*&#x20B9;*/} ${volume.slice(0, 2)}B
+          </p>
+        </Col>
       </Row>
     </Container>
   );

@@ -31,11 +31,10 @@ const Coinlist = () => {
           </Col>
         </Row>
         <Row  className="mb-4 mt-5">
-          <Col sm={3} className=""><strong>Name</strong></Col>
+          <Col><strong>Name</strong></Col>
           <Col><strong>Price</strong></Col>
-          <Col><strong>Volume</strong></Col>
           <Col><strong>Change</strong></Col>
-          <Col><strong>Market Cap</strong></Col>
+          <Col><strong>Volume</strong></Col>
         </Row>
         <p></p>
         <Row>
