@@ -72,3 +72,14 @@
   position: relative;
   background-image:url('./blogs.jpeg');
 }
+.CoinMarketHead{
+  height:70vh;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image:url('./coinmarket1.jpeg');
+}

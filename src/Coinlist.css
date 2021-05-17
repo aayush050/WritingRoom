@@ -3,10 +3,12 @@
 .coin-text {
     text-align: center;
 }
-.container{
+.containerMarket{
   display:flex;
-  justify-content: center;
   flex-direction: column;
-  text-align: center;
+  /* text-align: center; */
 
+}
+.alignName{
+  text-align: center;
 }

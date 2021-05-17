@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./Coinlist.css";
 import Coin from "./Coin";
-import { Container, Row, Col } from "react-bootstrap";
+import {Table } from "react-bootstrap";
 const Coinlist = () => {
   const [coins, setCoins] = useState([]);
   const [search] = useState("");
@@ -23,8 +23,40 @@ const Coinlist = () => {
   );
   return (
     <div>
-      <header className="AltcoinHead"></header>
-      <Container className="mt-5">
+      <header className="CoinMarketHead"></header>
+      <h1 className="coin-text mt-5 mb-5">Live Crypto Market Price</h1>
+      <div className="containerMarket">
+      <Table responsive borderless>
+        <thead> 
+          <tr rowspan="2">
+            <th className="alignName">Coin Name</th>
+            <th colSpan="2">Price</th>
+            <th colSpan="2">Change</th>
+            <th colSpan="2">Volume</th>
+          </tr>
+        </thead>
+        <tbody >
+              {filteredCoins.map((coin) => {
+                return (
+
+                  <Coin
+                    key={coin.id}
+                    name={coin.name}
+                    price={coin.current_price}
+                    symbol={coin.symbol}
+                    marketcap={coin.total_volume.toLocaleString()}
+                    volume={coin.market_cap.toLocaleString()}
+                    image={coin.image}
+                    priceChange={coin.price_change_percentage_24h}
+                  />
+                 
+                );
+              })}
+            
+        </tbody>
+      </Table>
+      </div>
+      {/* <Container className="containerMarket mt-5">
         <Row>
           <Col>
             <h1 className="coin-text">Some famous cryptocurrency</h1>
@@ -54,7 +86,7 @@ const Coinlist = () => {
           })}
         </Row>
         <p></p>
-      </Container>
+      </Container> */}
     </div>
   );
 };
