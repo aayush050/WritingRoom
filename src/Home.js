@@ -1,6 +1,6 @@
 import React from "react";
 import "./Front.css";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row} from "react-bootstrap";
 //import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
@@ -16,7 +16,6 @@ const Home = () => {
         transparent="false"
         show-symbol-logo="true"
       ></div>
-      {/* <div class="coinmarketcap-currency-widget" data-currencyid="1027" data-base="INR" data-secondary="USD" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-statsticker="true" data-stats="INR"></div> */}
       <Container>
         <Container class="hidden-spacer"> </Container>
         <Container>
@@ -60,7 +59,7 @@ const Home = () => {
                 CoinLore.
               </p>
               <p>
-                Decentralized cryptocurrency is produced by the entire
+                <span className="modalsInsidePage" data-bs-toggle="popover" data-bs-trigger="hover focus" title="Decentralized cryptocurrency is a blockchain-based form of cryptocurrency that does not rely on central intermediaries." >Decentralized</span> cryptocurrency is produced by the entire
                 cryptocurrency system collectively, at a rate which is defined
                 when the system is created and which is publicly known. In
                 centralized banking and economic systems such as the Federal

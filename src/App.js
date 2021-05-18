@@ -9,12 +9,15 @@ import Blockchain from './Blockchain';
 import Altcoin from './Altcoin';
 import Token from './Token.js';
 import Coinlist from './Coinlist';
+import ScrollToTop from './ScrollToTop';
+
 function App() {
   return (
     <Router>
     <div className="App">
       <Navbar />
       <div className="content">
+      <ScrollToTop />
         <Switch>
           <Route exact path ="/" component = { Home } />
           <Route path ="/blogs" component = {Blogs} />

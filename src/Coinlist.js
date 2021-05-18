@@ -9,7 +9,7 @@ const Coinlist = () => {
   useEffect(() => {
     axios
       .get(
-        "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false"
+        "https://api.coingecko.com/api/v3/coins/markets?vs_currency=inr&order=market_cap_desc&per_page=10&page=1&sparkline=false"
       )
       .then((res) => {
         setCoins(res.data);
@@ -26,13 +26,13 @@ const Coinlist = () => {
       <header className="CoinMarketHead"></header>
       <h1 className="coin-text mt-5 mb-5">Live Crypto Market Price</h1>
       <div className="containerMarket">
-      <Table responsive borderless>
+      <Table responsive borderless >
         <thead> 
           <tr rowspan="2">
             <th className="alignName">Coin Name</th>
             <th colSpan="2">Price</th>
             <th colSpan="2">Change</th>
-            <th colSpan="2">Volume</th>
+            <th colSpan="2" >Volume</th>
           </tr>
         </thead>
         <tbody >
