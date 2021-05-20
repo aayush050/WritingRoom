@@ -10,7 +10,7 @@ import Altcoin from './Altcoin';
 import Token from './Token.js';
 import Coinlist from './Coinlist';
 import ScrollToTop from './ScrollToTop';
-
+import Platforms from './Platforms';
 function App() {
   return (
     <Router>
@@ -25,12 +25,13 @@ function App() {
           <Route path="/altcoin" component = {Altcoin} />
           <Route path="/token" component = {Token} />
           <Route path="/coins" component = {Coinlist} />
+          <Route path="/platforms" component = {Platforms} />
           <Route path="*" component = {NotFound} />    
         </Switch>
       </div>
         <Contact />
-     
-    </div>
+     </div>
+    
     </Router>
   );
 }

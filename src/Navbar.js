@@ -12,6 +12,7 @@ const Navbar1 = () => {
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="ml-auto active">
+    <Nav.Link ><Link to="/platforms"  className ="style-link">Platforms</Link></Nav.Link>
     <Nav.Link ><Link to="/coins"  className ="style-link">Coin Market</Link></Nav.Link>
       <Nav.Link ><Link to="/blogs"  className ="style-link">Blogs</Link></Nav.Link>
     </Nav>

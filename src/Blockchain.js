@@ -2,7 +2,6 @@ import React from "react";
 import "./Front.css";
 import { Container, Row, Popover, OverlayTrigger } from "react-bootstrap";
 //import { Link } from "react-router-dom";
-import "./Front.css";
 
 const Blockchain = () => {
   
