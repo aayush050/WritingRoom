@@ -20,7 +20,7 @@ const Platforms = () => {
         <Container>
           <Row>
             <Container class="col-12 mt-5">
-              <h1 class="mt-5">5 Major Platforms for trading and investing in india</h1>
+              <h1 class="mt-5">5 Major Platforms for trading and investing in India</h1>
               <ExternalLink
                 href="https://wazirx.com/"
                 className="linksInsidePage"
