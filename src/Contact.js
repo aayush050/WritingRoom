@@ -32,7 +32,7 @@ const Contact = () => {
             </Navbar.Brand>
             <Nav.Link className="ml-auto active" >
               <Container className = " mx-1">
-              <img src="https://media-exp1.licdn.com/dms/image/C4E03AQEd8dEPOIW-RA/profile-displayphoto-shrink_200_200/0/1612726419159?e=1625702400&v=beta&t=VVTZplGBH-V_EcRWcIQypZ7NQ6VBxaYHx0bepwhhzn8"
+              <img src="https://media.licdn.com/dms/image/C5603AQEpdVFzAzSEzw/profile-displayphoto-shrink_400_400/0/1655826453166?e=1693440000&v=beta&t=gijrhCdiRbEnwORTbOfXDpjOY0gPtzYK68lxbDqCnq0"
                 alt="myImage"/>
                 
               <p className="text">
